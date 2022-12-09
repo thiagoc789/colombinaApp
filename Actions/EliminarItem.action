@@ -1,0 +1,12 @@
+{
+	"_Type": "Action.Type.ODataService.DeleteEntity",
+	"ActionResult": {
+		"_Name": "EliminarItem"
+	},
+	"Target": {
+		"Service": "/Colombina/Services/Colombina.service",
+		"EntitySet": "Aux_Pedido",
+		"QueryOptions": "$filter=id_producto eq '{id_producto}' and status eq 'Pendiente'",
+		"ReadLink": "{@odata.readLink}"
+	}
+}

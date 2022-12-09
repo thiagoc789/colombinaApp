@@ -1,0 +1,12 @@
+{
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "Upload_Pedido"
+	},
+	"OnSuccess": "/Colombina/Actions/Msg_pedidoenviado.action",
+	"Service": "/Colombina/Services/Colombina.service",
+	"UploadCategories": [
+		"Detalle_Pedido",
+		"Aux_Pedido"
+	]
+}

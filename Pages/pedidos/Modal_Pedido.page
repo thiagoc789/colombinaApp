@@ -1,0 +1,142 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "#Page:Inventario/#Control:Fc_campocliente/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_idcliente",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Id cliente",
+							"Enabled": true
+						},
+						{
+							"Value": "{id}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_idproducto",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Id producto",
+							"Enabled": true
+						},
+						{
+							"Value": "{descripcion}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_nombreproducto",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Nombre producto",
+							"Enabled": true
+						},
+						{
+							"Value": "/Colombina/Rules/traerimagen.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_imagen",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Imagen",
+							"Enabled": true
+						},
+						{
+							"Value": "{precio}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_precio",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Precio unitario",
+							"Enabled": true
+						},
+						{
+							"Value": [
+							],
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "Fc_tipodeunidad",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Seleccione tipo de cantidad",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Tipo de unidad",
+							"OnValueChange": "/Colombina/Rules/calcular_preciototal.js",
+							"IsSelectedSectionEnabled": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": true,
+							"PickerItems": [
+								"CAR",
+								"UND"
+							]
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_cantidad",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Cantidad:",
+							"PlaceHolder": "Escriba la cantidad",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_descuento",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Descuento",
+							"PlaceHolder": "Escriba el descuento",
+							"OnValueChange": "/Colombina/Rules/calcular_preciototal.js",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_valortotal",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Valor total",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Title": "Añadir al carrito",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://cart-2",
+							"ImagePosition": "Leading",
+							"OnPress": "/Colombina/Actions/createAuxInventario.action"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton1",
+							"IsVisible": true,
+							"Title": "Cancelar",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://cancel",
+							"ImagePosition": "Leading",
+							"OnPress": "/Colombina/Actions/ClosePage.action"
+						}
+					],
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Modal_Pedido",
+	"Caption": "Modal_Pedido",
+	"OnLoaded": "/Colombina/Rules/traerimagen.js"
+}

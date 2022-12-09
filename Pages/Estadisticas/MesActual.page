@@ -1,0 +1,81 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ChartContent": {
+						"Title": "Dic 2022",
+						"Subtitle": "Displaying of Sales for Store",
+						"StatusText": "8h ago",
+						"IsReadOnly": false,
+						"ChartView": {
+							"ChartType": "Column",
+							"SeriesTitles": [
+								"S1"
+							],
+							"SeriesColor": [
+								"#5899DA"
+							],
+							"Data": [
+								[
+									431000,
+									494000,
+									491000,
+									536000,
+									675000,
+									680000
+								]
+							],
+							"CategoryTitles": [
+								"C1",
+								"C2",
+								"C3",
+								"C4",
+								"C5",
+								"C6"
+							],
+							"CategoryAxisTitle": "Category Axis Title",
+							"ValueAxisTitle": "Value Axis Title",
+							"TrendItems": [
+								{
+									"TrendTitle": "100%",
+									"TrendImage": "res://arrow_up.png"
+								}
+							]
+						},
+						"SummaryView": {
+							"SeriesTitles": [
+								"Sales for S1"
+							],
+							"AggregateItem": {
+								"Title": "Total Sales",
+								"TrendTitle": "100%",
+								"TrendImage": "res://arrow_up.png",
+								"Value": {
+									"LeadingUnit": "$",
+									"TrailingUnit": "k",
+									"Function": "SUM",
+									"Metrics": [
+										"3307"
+									]
+								}
+							}
+						}
+					},
+					"_Type": "Section.Type.ChartContent",
+					"_Name": "SectionChartContent0",
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "MesActual",
+	"Caption": "Mes Actual",
+	"PrefersLargeCaption": true
+}

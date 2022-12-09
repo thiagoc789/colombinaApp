@@ -1,0 +1,28 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.Tabs",
+			"_Name": "Tabs0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Inventario",
+					"PageToOpen": "/Colombina/Pages/pedidos/Inventario.page",
+					"_Name": "TabItem0",
+					"ResetIfPressedWhenActive": true
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Pedido",
+					"PageToOpen": "/Colombina/Pages/pedidos/Pedido_Detail.page",
+					"_Name": "TabItem1",
+					"ResetIfPressedWhenActive": true
+				}
+			],
+			"Position": "Top"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Pedido",
+	"Caption": "Crear Pedido"
+}

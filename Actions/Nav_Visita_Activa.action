@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"PageToOpen": "/Colombina/Pages/clientes/Visita_Activa.page",
+	"ActionResult": {
+		"_Name": "Nav_Visita_Activa"
+	}
+}

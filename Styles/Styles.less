@@ -1,0 +1,120 @@
+/*
+@primario: #FFFFFF;
+@secundario: #1A3EBB;
+
+//// By-Type style: All Pages in the application will now have a yellow background
+Page
+
+{ background-color: @primario; }
+//// By-Name style: All Buttons with _Name == "BlueButton" will now have this style
+#BlueButton
+
+{ color: @primario; background-color: @secundario; }
+//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function
+
+.MyButton
+
+{ color: @primario; background-color: @secundario; }*/
+
+@primario: #FFFFFF;
+@secundario: #283e8d;
+
+//// This style applies to all the ActionBars in the application
+ActionBar {
+    color:@primario;
+    background-color: @secundario;
+}
+
+//// This style applies to all the ToolBars in the application
+ToolBar {
+    color:@primario;
+    background-color: @secundario; /* Android */
+    //barticolor: gray;     /* iOS */
+}
+
+//// LogoutToolbarItem is tool bar item for Logout in Main.page
+#LogoutToolbarItem  {
+    color: @secundario;
+}
+
+//// UploadToolbarItem is tool bar item for Sync in Main.page
+#UploadToolbarItem  {
+    color:@secundario;
+}
+
+//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function
+//// below snippet is to style Customers button on Main.page
+.MyCustomerButton{
+  color: @secundario;
+  background-color: @primario;
+}
+
+//// below snippet is to style Title property of an Object Table control in Customers_List.page
+.ObjectTableTitle {
+ color:@primario;
+}
+
+//// below snippet is to style Object Header control in Customers_Detail.page
+
+/* Object Header - BodyText */
+.objectHeaderBodyText {
+  color:@primario;
+}
+
+/* Object Header - Description */
+.objectHeaderDescription {
+  color: @primario;
+}
+
+/* Object Header - Footnote */
+.objectHeaderFootNote {
+  color: green;
+}
+
+/* Object Header - Headline */
+.objectHeaderHeadline {
+  color: #ff00ff;
+}
+
+/* Object Header - Background */
+.objectHeaderBackground {
+background-color: #DC143C;
+}
+
+/* Object Header - StatusText */
+.objectHeaderStatus {
+  color: red;
+  font-style: italic;
+  font-size: 18;
+}
+
+/* Object Header - Subhead */
+.objectHeaderSubhead {
+  color: yellow;
+}
+
+/* Object Header - SubstatusText */
+.objectHeaderSubStatus {
+  color: blue;
+  font-style: italic;
+  font-size: 18;
+}
+
+.drawerBackground {
+  color:@primario;
+  background-color: @secundario;
+}
+
+.iconHeader {
+  background-color: #ff1b1b;
+  height: 500px;
+}
+.colorFoun{
+  color: black;
+}
+
+.colorCantidad{
+  color: rgb(255, 0, 0);
+}
+
+

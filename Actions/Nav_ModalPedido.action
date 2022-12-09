@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "Nav_ModalPedido"
+	},
+	"PageToOpen": "/Colombina/Pages/pedidos/Modal_Pedido.page",
+	"ModalPage": true,
+	"ModalPageFullscreen": false
+}

@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "Nav_DetalleProducto"
+	},
+	"PageToOpen": "/Colombina/Pages/clientes/Detalle_Producto.page"
+}

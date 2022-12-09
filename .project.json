@@ -1,0 +1,33 @@
+{
+	"Credential": "cf",
+	"CF": {
+		"Target": "https://api.cf.us10.hana.ondemand.com",
+		"Organization": "7ac0ee64-3c8c-4c5b-9051-3a3bbe35c694",
+		"Space": "b5d158a7-c130-49b9-9ebb-0cc94f96d412"
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/7ac0ee64-3c8c-4c5b-9051-3a3bbe35c694/space/b5d158a7-c130-49b9-9ebb-0cc94f96d412",
+		"AppId": "Colombina",
+		"Destination": [
+			"Colombina"
+		]
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=Colombina&ClientId=6e645b5a-157f-4ee2-b44e-7e78640e21dd&ServerUrl=https://27c46edatrial-dev-colombina.cfapps.us10.hana.ondemand.com&SapCloudPlatformEndpoint=https://27c46edatrial-dev-colombina.cfapps.us10.hana.ondemand.com&AuthorizationEndpointUrl=https://27c46edatrial-dev-colombina.cfapps.us10.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://27c46edatrial-dev-colombina.cfapps.us10.hana.ondemand.com&TokenUrl=https://27c46edatrial-dev-colombina.cfapps.us10.hana.ondemand.com/oauth2/api/v1/token&multiUser=false"
+	},
+	"LCAP": {
+		"FullName": "",
+		"Service": [],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	},
+	"Build": {
+		"SourceMap": true,
+		"WMF": false
+	}
+}

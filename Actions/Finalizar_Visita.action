@@ -1,0 +1,16 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "Finalizar_Visita"
+	},
+	"OnSuccess": "/Colombina/Actions/Nav_home.action",
+	"Target": {
+		"Service": "/Colombina/Services/Colombina.service",
+		"EntitySet": "Clientes",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties": {
+		"id": "{id}",
+		"lat": "Inactiva"
+	}
+}

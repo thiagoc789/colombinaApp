@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "Msg_CrearEntidadCorrectamente"
+	},
+	"Message": "Entidad registrada correctamente",
+	"OKCaption": "Ok",
+	"OnOK": "/Colombina/Rules/clientes/visita_exitosa.js"
+}

@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"PageToOpen": "/Colombina/Pages/clientes/rutero_clientes.page",
+	"ActionResult": {
+		"_Name": "Nav_RuteroClientes"
+	}
+}

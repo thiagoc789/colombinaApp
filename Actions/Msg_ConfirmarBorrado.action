@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "Msg_ConfirmarBorrado"
+	},
+	"Message": "¿Quieres eliminar este producto del carrito?",
+	"OKCaption": "Ok",
+	"OnOK": "/Colombina/Actions/EliminarItem.action",
+	"CancelCaption": "Cancel"
+}

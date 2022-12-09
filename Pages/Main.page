@@ -1,0 +1,86 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage1",
+					"Visible": true,
+					"Image": "/Colombina/Images/mayonesa.png",
+					"Alignment": "center",
+					"ContentMode": "ScaleAspectFit",
+					"PaddingTop": 30,
+					"PaddingBottom": 20,
+					"PaddingLeft": 10,
+					"PaddingRight": 10
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage2",
+					"Visible": true,
+					"Image": "/Colombina/Images/salsas.png",
+					"Alignment": "center",
+					"ContentMode": "ScaleAspectFit",
+					"PaddingTop": 10,
+					"PaddingBottom": 10,
+					"PaddingLeft": 10,
+					"PaddingRight": 10
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Inicio",
+	"PrefersLargeCaption": true,
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "LogoutToolbarItem",
+				"Caption": "Logout",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"OnPress": "/Colombina/Actions/Logout.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "UploadToolbarItem",
+				"Caption": "Sync",
+				"Enabled": true,
+				"Visible": false,
+				"Clickable": true,
+				"OnPress": "/Colombina/Actions/Service/SyncStartedMessage.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "UpdateToolbarItem",
+				"Caption": "Update",
+				"Enabled": true,
+				"Visible": "$(PLT,true,true,false)",
+				"Clickable": true,
+				"OnPress": "/Colombina/Actions/AppUpdateProgressBanner.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Caption": "Sync",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Style": "",
+				"OnPress": "/Colombina/Actions/Service/SyncStartedMessage.action"
+			}
+		],
+		"Visible": true
+	}
+}

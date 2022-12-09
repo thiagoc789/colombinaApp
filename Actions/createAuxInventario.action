@@ -1,0 +1,24 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "createAuxInventario"
+	},
+	"OnFailure": "/Colombina/Actions/Msg_CrearEntidadFallo.action",
+	"OnSuccess": "/Colombina/Actions/Msg_anadircarrito.action",
+	"Target": {
+		"Service": "/Colombina/Services/Colombina.service",
+		"EntitySet": "Aux_Pedido"
+	},
+	"Properties": {
+		"ID_PEDIDOALEATORIO": "/Colombina/Rules/generarAleatorio.js",
+		"id_pedido_aux": "#Page:Inventario/#Control:Fc_idpedidoaux/#Value",
+		"id_cliente": "#Page:Inventario/#Control:Fc_campocliente/#Value",
+		"id_producto": "#Page:Modal_Pedido/#Control:Fc_idproducto/#Value",
+		"nombreproducto": "#Page:Modal_Pedido/#Control:Fc_nombreproducto/#Value",
+		"preciounitario": "#Page:Modal_Pedido/#Control:Fc_precio/#Value",
+		"preciototal": "#Page:Modal_Pedido/#Control:Fc_valortotal/#Value",
+		"cantidad": "#Page:Modal_Pedido/#Control:Fc_cantidad/#Value",
+		"fecha": "/Colombina/Rules/clientes/traerfecha.js",
+		"status": "Pendiente"
+	}
+}

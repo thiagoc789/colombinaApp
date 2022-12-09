@@ -1,0 +1,11 @@
+{
+	"_Type": "Action.Type.ODataService.Initialize",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnFailure": "/Colombina/Actions/Service/InitializeOfflineFailureMessage.action",
+	"OnSuccess": "/Colombina/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"Service": "/Colombina/Services/Colombina.service"
+}

@@ -1,0 +1,92 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Row": {
+						"Items": [
+							{
+								"NumberOfLines": 1,
+								"Text": "{id}",
+								"TextAlignment": "center"
+							},
+							{
+								"NumberOfLines": 1,
+								"Text": "{nombre}",
+								"TextAlignment": "center"
+							},
+							{
+								"NumberOfLines": 1,
+								"Text": "{direccion}",
+								"TextAlignment": "center"
+							},
+							{
+								"NumberOfLines": 1,
+								"Text": "{dia_visita}",
+								"TextAlignment": "center"
+							}
+						],
+						"Layout": {
+							"ColumnWidth": [
+							]
+						},
+						"OnPress": "/Colombina/Actions/Clientes/Nav_ClienteDetail.action"
+					},
+					"_Type": "Section.Type.DataTable",
+					"Target": {
+						"Service": "/Colombina/Services/Colombina.service",
+						"EntitySet": "Clientes",
+						"QueryOptions": "/Colombina/Rules/clientes/organizar_fecha.js"
+					},
+					"_Name": "SectionDataTable0",
+					"Header": {
+						"DataTable": {
+							"Items": [
+								{
+									"NumberOfLines": 1,
+									"Text": "Id",
+									"TextAlignment": "center"
+								},
+								{
+									"NumberOfLines": 1,
+									"Text": "Nombre",
+									"TextAlignment": "center"
+								},
+								{
+									"NumberOfLines": 1,
+									"Text": "Direccion",
+									"TextAlignment": "center"
+								},
+								{
+									"NumberOfLines": 1,
+									"Text": "Dia visita",
+									"TextAlignment": "center"
+								}
+							],
+							"Layout": {
+								"ColumnWidth": [
+								]
+							}
+						},
+						"_Name": "SectionDataTableHeader0",
+						"UseTopPadding": true
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Tabla_Clientes",
+	"Caption": "Tabla de clientes",
+	"PrefersLargeCaption": true
+}
