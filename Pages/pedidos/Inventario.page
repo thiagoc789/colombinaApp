@@ -1,0 +1,104 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/Colombina/Services/Colombina.service",
+						"EntitySet": "Inventario_Mayorista",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{descripcion}",
+						"Subhead": "Precio: ${precio}",
+						"Description": "Id: {id}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "Stock :{inv_libre}",
+						"DetailImage": "{imagen}",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Tags": [
+						],
+						"AvatarStack": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true
+						},
+						"OnPress": "/Colombina/Actions/Nav_ModalPedido.action",
+						"Selected": false
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Buscar...",
+						"BarcodeScanner": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "",
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": true,
+					"Selection": {
+						"Mode": "None",
+						"LongPressToEnable": "None",
+						"ExitOnLastDeselect": false
+					}
+				},
+				{
+					"Controls": [
+						{
+							"Value": "{id}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_campocliente",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Caption",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "/Colombina/Rules/generarAleatorio.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_idpedidoaux",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Numero de pedido",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Inventario",
+	"Caption": "Inventario Pedido",
+	"PrefersLargeCaption": true
+}

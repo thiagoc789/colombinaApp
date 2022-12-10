@@ -1,0 +1,61 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectCardCollection",
+					"Target": {
+						"Service": "/Colombina/Services/Colombina.service",
+						"EntitySet": "Detalle_Pedido",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionObjectCardCollection1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"Card": {
+						"Visible": true,
+						"Title": "{id}",
+						"Subhead": "{nombre_producto}",
+						"Footnote": "{id_pedido}",
+						"DetailImage": "res://mdk_logo.png",
+						"DetailImageIsCircular": false,
+						"StatusText": "{cliente}",
+						"Description": "Status: Enviado",
+						"OverflowButtons": [
+							{
+								"_Name": "SectionObjectCardCollection1OverflowButtons0",
+								"Style": "Normal",
+								"Title": "",
+								"Visible": true
+							}
+						],
+						"PrimaryAction": {
+							"Title": "Primary",
+							"Visible": true
+						},
+						"SecondaryAction": {
+							"Title": "Secondary",
+							"Visible": true
+						},
+						"_Type": "Control.Type.ObjectCard"
+					},
+					"Layout": {
+						"LayoutType": "Vertical"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "historial_pedidos",
+	"Caption": "historial_pedidos",
+	"PrefersLargeCaption": true
+}

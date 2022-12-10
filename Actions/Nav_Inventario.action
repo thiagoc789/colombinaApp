@@ -1,0 +1,11 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "Nav_Inventario"
+	},
+	"PageToOpen": "/Colombina/Pages/inventario/Inventario_General.page",
+	"ClearHistory": false,
+	"OuterNavigation": true,
+	"ModalPage": false,
+	"NavigationType": "Inner"
+}

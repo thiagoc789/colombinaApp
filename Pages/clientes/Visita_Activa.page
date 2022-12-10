@@ -1,0 +1,76 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/Colombina/Services/Colombina.service",
+						"EntitySet": "Clientes",
+						"QueryOptions": "$filter=lat eq 'Activa'"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{nombre}",
+						"Subhead": "{direccion}",
+						"Footnote": "{id}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "Visita Activa",
+						"DetailImage": "/Colombina/Images/feliz.png",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Tags": [
+						],
+						"AvatarStack": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true
+						},
+						"OnPress": "/Colombina/Actions/Clientes/Nav_ClienteDetail.action",
+						"Styles": {
+							"StatusText": "colorCantidad"
+						},
+						"Selected": false
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Buscar cliente...",
+						"BarcodeScanner": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"Mode": "None",
+						"LongPressToEnable": "None",
+						"ExitOnLastDeselect": true
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Visita_Activa",
+	"Caption": "Visita Activa",
+	"PrefersLargeCaption": true
+}

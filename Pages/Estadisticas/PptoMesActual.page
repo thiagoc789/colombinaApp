@@ -1,0 +1,32 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.KPISection",
+					"_Name": "SectionKPISection0",
+					"Visible": true,
+					"KPIItems": [
+						{
+							"_Name": "KPIItem0",
+							"CaptionLabel": "CaptionLabel",
+							"MetricItems": [
+							],
+							"ShowProgress": true
+						}
+					]
+				}
+			]
+		}
+	],
+	"DesignTimeTarget": {
+		"Service": "/Colombina/Services/Colombina.service",
+		"EntitySet": "Hist_Cliente"
+	},
+	"_Type": "Page",
+	"_Name": "PptoMesActual",
+	"Caption": "PptoMesActual",
+	"PrefersLargeCaption": true
+}

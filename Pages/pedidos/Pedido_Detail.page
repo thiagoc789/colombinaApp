@@ -1,0 +1,131 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/Colombina/Services/Colombina.service",
+						"EntitySet": "Aux_Pedido",
+						"QueryOptions": "$filter=status eq 'Pendiente'"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{nombreproducto}",
+						"Subhead": "Cliente: {id_cliente}",
+						"Footnote": "Precio: ${preciototal}",
+						"Description": "Cant: {cantidad}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "{status}",
+						"SubstatusText": "{fecha}",
+						"DetailImage": "{imagen}",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"AccessoryButtonIcon": "sap-icon://delete",
+						"ProgressIndicator": "inProgress",
+						"Tags": [
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://customer",
+									"ImageText": ""
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true
+						},
+						"OnAccessoryButtonPress": "/Colombina/Actions/Msg_ConfirmarBorrado.action",
+						"Selected": false
+					},
+					"Search": {
+						"BarcodeScanner": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				},
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_neto",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Valor total pedido + iva",
+							"Enabled": true
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "Enviar pedido",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://feeder-arrow",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"OnPress": {
+								"Handler": "/Colombina/Rules/clientes/crear_pedido.js",
+								"UserInteraction": {
+									"Enabled": true,
+									"Title": "Enviar pedido"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Pedido_Detail",
+	"Caption": "Detalles del pedido",
+	"PrefersLargeCaption": true,
+	"OnLoaded": "/Colombina/Rules/clientes/ItemPedidos.js"
+}

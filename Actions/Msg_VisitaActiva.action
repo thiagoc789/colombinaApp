@@ -1,0 +1,11 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "Msg_VisitaActiva"
+	},
+	"Message": "Tienes una visita activa, deseas continuarla?",
+	"Title": "Continuar visita",
+	"OKCaption": "Continuar",
+	"OnOK": "/Colombina/Actions/Nav_Visita_Activa.action",
+	"CancelCaption": "Finalizar"
+}

@@ -1,0 +1,50 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnFailure": "/Colombina/Actions/Service/SyncFailureMessage.action",
+	"Service": "/Colombina/Services/Colombina.service",
+	"DefiningRequests": [
+		{
+			"Name": "HISTV",
+			"Query": "HISTV",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "Inventario_Mayorista",
+			"Query": "Inventario_Mayorista",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "Cartera",
+			"Query": "Cartera",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "Clientes",
+			"Query": "Clientes",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "Inventario_Cliente",
+			"Query": "Inventario_Cliente",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "Hist_Cliente",
+			"Query": "Hist_Cliente",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "Aux_Pedido",
+			"Query": "Aux_Pedido",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "Detalle_Pedido",
+			"Query": "Detalle_Pedido",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

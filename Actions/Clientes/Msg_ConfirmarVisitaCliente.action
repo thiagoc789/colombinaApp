@@ -1,0 +1,11 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "Msg_ConfirmarVisitaCliente"
+	},
+	"Message": "¿Quieres Visitar A Este Cliente?",
+	"Title": "Confirmar Visita",
+	"OKCaption": "Si",
+	"OnOK": "/Colombina/Actions/Crear_Visita.action",
+	"CancelCaption": "No"
+}

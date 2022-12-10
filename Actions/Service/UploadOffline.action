@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnFailure": "/Colombina/Actions/Service/SyncFailureMessage.action",
+	"OnSuccess": "/Colombina/Actions/Service/DownloadStartedMessage.action",
+	"Service": "/Colombina/Services/Colombina.service"
+}

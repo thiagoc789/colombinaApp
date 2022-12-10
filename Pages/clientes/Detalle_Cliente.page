@@ -1,0 +1,172 @@
+{
+	"Controls": [
+		{
+			"DataSubscriptions": [
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Subhead": "{id}",
+						"Footnote": "{telefono}",
+						"Description": "{direccion}",
+						"StatusText": "{dia_visita}",
+						"DetailImage": "/Colombina/Images/EPS.png",
+						"DetailImageIsCircular": false,
+						"Tags": [
+						],
+						"HeadlineText": "{nombre}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0"
+				},
+				{
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable2",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "Boton_VisitarCliente",
+							"Title": "Iniciar Visita Cliente",
+							"TextAlignment": "Center",
+							"Alignment": "Left",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://visits",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"OnPress": {
+								"Handler": "/Colombina/Actions/Clientes/Msg_ConfirmarVisitaCliente.action",
+								"UserInteraction": {
+									"Enabled": true,
+									"Title": "Visitar Cliente"
+								}
+							}
+						}
+					]
+				},
+				{
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Center"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionTableClientesDetail",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton2",
+							"Title": "Realizar pedido",
+							"TextAlignment": "Center",
+							"Alignment": "Left",
+							"ButtonType": "Secondary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://customer-order-entry",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"OnPress": {
+								"Handler": "/Colombina/Actions/Nav_Pedido.action",
+								"UserInteraction": {
+									"Enabled": true,
+									"Title": "Realizar Pedido"
+								}
+							}
+						},
+						{
+							"_Name": "SectionButton3",
+							"Title": "Ver inventario",
+							"TextAlignment": "Center",
+							"Alignment": "Left",
+							"ButtonType": "Secondary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://sap-box",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"OnPress": {
+								"Handler": "/Colombina/Actions/Nav_TabInventarioCliente.action",
+								"UserInteraction": {
+									"Enabled": true,
+									"Title": "Ver Inventario"
+								}
+							}
+						},
+						{
+							"_Name": "SectionButton4",
+							"Title": "Ver cartera",
+							"TextAlignment": "Center",
+							"Alignment": "Left",
+							"ButtonType": "Secondary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://sales-document",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"OnPress": {
+								"Handler": "/Colombina/Actions/Nav_Cartera.action",
+								"UserInteraction": {
+									"Enabled": true,
+									"Title": "Ver Cartera"
+								}
+							}
+						}
+					]
+				},
+				{
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable1",
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton5",
+							"Title": "Finalizar visita(TD)",
+							"TextAlignment": "Center",
+							"Alignment": "Left",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://accept",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"OnPress": {
+								"Handler": "/Colombina/Actions/Msg_VisitaFinalizada.action",
+								"UserInteraction": {
+									"Enabled": true,
+									"Title": "Finalizar visita"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Clientes_Detail",
+	"Caption": "Detalle Cliente",
+	"PrefersLargeCaption": true,
+	"OnLoaded": "/Colombina/Rules/boton_visita.js"
+}

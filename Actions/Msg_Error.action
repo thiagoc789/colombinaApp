@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Error en el proceso",
+	"Title": "Error",
+	"ActionResult": {
+		"_Name": "Msg_Error"
+	}
+}

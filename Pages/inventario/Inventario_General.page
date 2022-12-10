@@ -1,0 +1,100 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"FastFilters": [
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "Order",
+						"Label": "Orderby",
+						"DisplayValue": "precio",
+						"ReturnValue": "precio",
+						"FilterType": "Sorter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FilterByCantidad",
+						"Label": "Cantidad ",
+						"DisplayValue": "< 30000",
+						"ReturnValue": "inv_libre lt 30000",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter0",
+						"DisplayValue": "Galletas",
+						"ReturnValue": "centro_distribucion eq 'Galletas'",
+						"FilterType": "Filter"
+					}
+				],
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/Colombina/Services/Colombina.service",
+						"EntitySet": "Inventario_Mayorista"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{descripcion}",
+						"Subhead": "Precio: ${precio}",
+						"Footnote": "{id}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "Stock: {inv_libre}",
+						"DetailImage": "{imagen}",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Tags": [
+						],
+						"AvatarStack": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true
+						},
+						"OnPress": "/Colombina/Actions/Nav_Det_inventario.action",
+						"Selected": false
+					},
+					"Search": {
+						"Enabled": true,
+						"BarcodeScanner": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "",
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": true,
+					"Selection": {
+						"Mode": "None",
+						"LongPressToEnable": "None",
+						"ExitOnLastDeselect": false
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Inventario_copy",
+	"Caption": "Inventario",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,13 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "Actualizar_Estado_Pedido_Enviado"
+	},
+	"OnFailure": "/Colombina/Actions/Msg_CrearEntidadFallo.action",
+	"Target": {
+		"Service": "/Colombina/Services/Colombina.service",
+		"EntitySet": "Aux_Pedido",
+		"QueryOptions": "",
+		"ReadLink": ""
+	}
+}

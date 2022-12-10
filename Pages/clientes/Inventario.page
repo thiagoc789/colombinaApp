@@ -1,0 +1,90 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"FastFilters": [
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "Order",
+						"Label": "Orderby",
+						"DisplayValue": "precio",
+						"ReturnValue": "precio_producto",
+						"FilterType": "Sorter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FilterByCantidad",
+						"Label": "Precio",
+						"DisplayValue": "< 10000",
+						"ReturnValue": "precio_producto lt 10000",
+						"FilterType": "Filter"
+					}
+				],
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/Colombina/Services/Colombina.service",
+						"EntitySet": "Inventario_Cliente",
+						"QueryOptions": "$filter=idcliente eq '{id}'"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "Este cliente no tiene inventario",
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{nombre_producto}",
+						"Subhead": "Precio: {precio_producto}",
+						"Footnote": "{id}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "Stock: {cantidad_producto}",
+						"DetailImage": "{imagen}",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"ProgressIndicator": "inProgress",
+						"Tags": [
+						],
+						"AvatarStack": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true
+						},
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Inventario_condetail",
+	"Caption": "Inventario Cliente",
+	"PrefersLargeCaption": true
+}

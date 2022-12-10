@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "Nav_Menu_Inicio"
+	},
+	"PageToOpen": "/Colombina/Pages/menu_inicio.page"
+}

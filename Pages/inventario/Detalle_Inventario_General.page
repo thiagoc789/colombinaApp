@@ -1,0 +1,106 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage0",
+					"Visible": true,
+					"Image": "{imagen}",
+					"Alignment": "center",
+					"ContentMode": "ScaleAspectFit"
+				},
+				{
+					"Controls": [
+						{
+							"Value": "{id}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_idproducto",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Codigo del producto",
+							"Enabled": true
+						},
+						{
+							"Value": "{descripcion}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_nombre",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Nombre del producto",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "{precio}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_precio",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Precio unitario",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "{inv_libre}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Cantidad disponible",
+							"Enabled": true
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton1",
+							"Title": "Cancelar",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"OnPress": {
+								"Handler": "/Colombina/Actions/ClosePage.action",
+								"UserInteraction": {
+									"Enabled": true,
+									"Title": "Salir"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Detail_Inventario",
+	"Caption": "Detalle Producto",
+	"PrefersLargeCaption": true
+}

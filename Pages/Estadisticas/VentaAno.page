@@ -1,0 +1,73 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"AnalyticCard": {
+						"ChartType": "Column",
+						"Title": "2022",
+						"Subtitle": "Historial venta año actual",
+						"TrendImage": "res://arrow_up.png",
+						"IsTrendUpward": true,
+						"TrendTitle": "5,3 % ",
+						"StatusText": "08 Dic",
+						"LeadingUnit": "$",
+						"Metric": "6,547,000",
+						"TrailingUnit": "Cop",
+						"SeriesTitle": [
+							"S1"
+						],
+						"SeriesColor": [
+							"#1134b2"
+						],
+						"DataSeries": {
+							"Data": [
+								[
+									431000,
+									494000,
+									491000,
+									536000,
+									615000,
+									600000,
+									630000,
+									660000,
+									680000,
+									700000,
+									710000
+								]
+							],
+							"CategoryTitles": [
+								"Ene ",
+								"Feb",
+								"Mar",
+								"Abr",
+								"May",
+								"Jun",
+								"Jul",
+								"Ago",
+								"Sep",
+								"Oct",
+								"Nov"
+							],
+							"CategoryLabelVisible": true,
+							"NumericLabelVisible": false
+						},
+						"_Type": "Card.Type.Chart"
+					},
+					"_Type": "Section.Type.AnalyticCardCollection",
+					"_Name": "SectionAnalyticCardCollection0",
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "VentaAno",
+	"Caption": "VentaAno",
+	"PrefersLargeCaption": true
+}

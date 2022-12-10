@@ -1,0 +1,26 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.Tabs",
+			"_Name": "Tabs0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Inventario",
+					"PageToOpen": "/Colombina/Pages/clientes/Inventario.page",
+					"_Name": "TabItem0"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Pedido Sugerido",
+					"PageToOpen": "/Colombina/Pages/clientes/PedidoSugerido.page",
+					"_Name": "TabItem1"
+				}
+			],
+			"Position": "Top"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "TabInventarioCliente",
+	"Caption": "Inventario del cliente"
+}

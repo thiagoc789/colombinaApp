@@ -1,0 +1,118 @@
+{
+	"Controls": [
+		{
+			"Header": {
+				"Headline": "Sky Commercial Management",
+				"SubHeadline": "Colombina S.A.",
+				"Icon": "/Colombina/Images/iconBlanco.png",
+				"Alignment": "left",
+				"IconIsCircular": false,
+				"DisableIconText": false
+			},
+			"Sections": [
+				{
+					"_Name": "SideDrawerSection0",
+					"Items": [
+						{
+							"Title": "Home",
+							"Image": "sap-icon://home",
+							"PageToOpen": "/Colombina/Pages/Main.page",
+							"_Name": "SideDrawerSection0Item0",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {
+								"SectionItemActive": "objectHeaderBodyText",
+								"SectionItemImage": "drawerBackground"
+							}
+						},
+						{
+							"Title": "Rutero de clientes",
+							"Image": "sap-icon://chevron-phase-2",
+							"OnPress": "/Colombina/Rules/clientes/visita_activa.js",
+							"_Name": "SideDrawerSection0Item1",
+							"ResetIfPressedWhenActive": true,
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {
+								"SectionItemImage": "drawerBackground"
+							}
+						},
+						{
+							"Title": "Inventario de productos",
+							"Image": "sap-icon://sap-box",
+							"PageToOpen": "/Colombina/Pages/inventario/Inventario_General.page",
+							"_Name": "SideDrawerSection0Item2",
+							"ResetIfPressedWhenActive": true,
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {
+								"SectionItemImage": "drawerBackground"
+							}
+						},
+						{
+							"Title": "Historico del cliente",
+							"Image": "sap-icon://work-history",
+							"PageToOpen": "/Colombina/Pages/clientes/Hist_clientes.page",
+							"_Name": "SideDrawerSection0Item4",
+							"ResetIfPressedWhenActive": true,
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {
+								"SectionItemImage": "drawerBackground"
+							}
+						},
+						{
+							"Title": "Indicadores",
+							"Image": "sap-icon://action",
+							"PageToOpen": "/Colombina/Pages/Estadisticas/TabEstadisticas.page",
+							"_Name": "SideDrawerSection0Item8",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {
+								"SectionItemImage": "drawerBackground"
+							}
+						},
+						{
+							"Title": "Cerrar Sesion",
+							"Image": "sap-icon://log",
+							"OnPress": "/Colombina/Actions/Logout.action",
+							"_Name": "SideDrawerSection0Item3",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {
+							}
+						},
+						{
+							"Title": "Item0",
+							"Image": "sap-icon://action",
+							"PageToOpen": "/Colombina/Pages/historial_pedidos.page",
+							"_Name": "SideDrawerSection0Item5",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {
+							}
+						}
+					],
+					"Visible": true,
+					"PreserveImageSpacing": false,
+					"SeparatorEnabled": true
+				}
+			],
+			"_Type": "Control.Type.SideDrawer",
+			"_Name": "SideDrawer0",
+			"AlwaysShowDrawerButton": false,
+			"ClearHistory": true,
+			"Styles": {
+				"DrawerBackground": "drawerBackground",
+				"DrawerButton": "drawerBackground",
+				"HeaderHeadline": "drawerBackground",
+				"HeaderSubHeadline": "drawerBackground",
+				"HeaderIcon": "iconHeader",
+				"SectionItemImage": "objectHeaderBackground"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "menu_inicio",
+	"Caption": "Menu"
+}

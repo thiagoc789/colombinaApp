@@ -1,0 +1,26 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.Tabs",
+			"_Name": "Tabs0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Lista",
+					"PageToOpen": "/Colombina/Pages/clientes/rutero_clientes.page",
+					"_Name": "TabItem0"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Tabla",
+					"PageToOpen": "/Colombina/Pages/clientes/Tabla_Clientes.page",
+					"_Name": "TabItem1"
+				}
+			],
+			"Position": "Top"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Lista_Clientes",
+	"Caption": "Lista de clientes"
+}

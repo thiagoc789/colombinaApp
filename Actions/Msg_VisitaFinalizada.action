@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "Msg_VisitaFinalizada"
+	},
+	"Message": "¿Finalizar la visita a este cliente?",
+	"OKCaption": "OK",
+	"OnOK": "/Colombina/Actions/Finalizar_Visita.action",
+	"CancelCaption": "Cancel"
+}

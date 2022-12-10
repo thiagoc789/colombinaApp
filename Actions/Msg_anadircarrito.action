@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "Msg_anadircarrito"
+	},
+	"OnSuccess": "/Colombina/Actions/ClosePage.action",
+	"Message": "Producto añadido al carrito",
+	"Duration": 1,
+	"Icon": "sap-icon://cart-2"
+}

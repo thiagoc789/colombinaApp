@@ -1,0 +1,15 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "crearpedido"
+	},
+	"OnFailure": "/Colombina/Actions/Msg_CrearEntidadFallo.action",
+	"OnSuccess": "/Colombina/Actions/Upload_Pedido.action",
+	"Target": {
+		"Service": "/Colombina/Services/Colombina.service",
+		"EntitySet": "Detalle_Pedido"
+	},
+	"Properties": {
+		"codigo_producto": "' '"
+	}
+}
