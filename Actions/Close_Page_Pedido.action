@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.ClosePage",
+	"ActionResult": {
+		"_Name": "Close_Page_Pedido"
+	},
+	"OnSuccess": "/Colombina/Rules/clientes/ItemPedidos.js",
+	"DismissModal": "Action.Type.ClosePage.Completed",
+	"CancelPendingActions": false
+}

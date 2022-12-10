@@ -1,11 +1,9 @@
 {
-	"_Type": "Action.Type.Message",
+	"_Type": "Action.Type.BannerMessage",
 	"ActionResult": {
 		"_Name": "Msg_pedidoenviado"
 	},
 	"OnSuccess": "/Colombina/Actions/Nav_home.action",
-	"Message": "El pedido fue enviado al sistema",
-	"Title": "Exito",
-	"OKCaption": "OK",
-	"OnOK": "/Colombina/Actions/Nav_home.action"
+	"Message": "El pedido fue enviado satisfactoriamente",
+	"Duration": 5
 }

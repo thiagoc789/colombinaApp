@@ -10,6 +10,6 @@
 		"EntitySet": "Detalle_Pedido"
 	},
 	"Properties": {
-		"codigo_producto": "' '"
+		"status": "Enviado"
 	}
 }

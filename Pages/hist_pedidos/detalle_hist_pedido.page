@@ -1,0 +1,77 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/Colombina/Services/Colombina.service",
+						"EntitySet": "Aux_Pedido",
+						"QueryOptions": "$filter=id_pedido_aux eq '{id}'"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{nombreproducto}",
+						"Subhead": "{id_cliente}",
+						"Footnote": "{preciototal}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "{status}",
+						"SubstatusText": "{fecha}",
+						"DetailImage": "res://mdk_logo.png",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"ProgressIndicator": "inProgress",
+						"Tags": [
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://customer",
+									"ImageText": ""
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [
+							],
+							"ImageIsCircular": true
+						},
+						"Selected": false
+					},
+					"Search": {
+						"Enabled": true,
+						"BarcodeScanner": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "detalle_hist_pedido",
+	"Caption": "Detalle del pedido",
+	"PrefersLargeCaption": true
+}

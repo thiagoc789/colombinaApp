@@ -3,10 +3,11 @@
 	"ActionResult": {
 		"_Name": "EliminarItem"
 	},
+	"OnSuccess": "/Colombina/Rules/clientes/ItemPedidos.js",
 	"Target": {
 		"Service": "/Colombina/Services/Colombina.service",
 		"EntitySet": "Aux_Pedido",
-		"QueryOptions": "$filter=id_producto eq '{id_producto}' and status eq 'Pendiente'",
+		"QueryOptions": "",
 		"ReadLink": "{@odata.readLink}"
 	}
 }
