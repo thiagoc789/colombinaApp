@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"PageToOpen": "/Colombina/Pages/pedidos/Aux_Pedido_Edit.page",
+	"ActionResult": {
+		"_Name": "Nav_Pedido_Edit"
+	}
+}

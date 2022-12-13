@@ -1,0 +1,104 @@
+{
+	"Caption": "Update Aux_Pedido Detail",
+	"DesignTimeTarget": {
+		"Service": "/Colombina/Services/Colombina.service",
+		"EntitySet": "Aux_Pedido",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/Colombina/Actions/ClosePage.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/Colombina/Actions/Aux_Pedido_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Caption": "",
+					"Controls": [
+						{
+							"Caption": "ID_PEDIDOALEATORIO",
+							"_Name": "ID_PEDIDOALEATORIO",
+							"Value": "{ID_PEDIDOALEATORIO}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "id_pedido_aux",
+							"_Name": "id_pedido_aux",
+							"Value": "{id_pedido_aux}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "id_cliente",
+							"_Name": "id_cliente",
+							"Value": "{id_cliente}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "id_producto",
+							"_Name": "id_producto",
+							"Value": "{id_producto}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "nombreproducto",
+							"_Name": "nombreproducto",
+							"Value": "{nombreproducto}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "preciounitario",
+							"_Name": "preciounitario",
+							"Value": "{preciounitario}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "preciototal",
+							"_Name": "preciototal",
+							"Value": "{preciototal}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "cantidad",
+							"_Name": "cantidad",
+							"Value": "{cantidad}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "fecha",
+							"_Name": "fecha",
+							"Value": "{fecha}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "status",
+							"_Name": "status",
+							"Value": "{status}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "imagen",
+							"_Name": "imagen",
+							"Value": "{imagen}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "PageOneFormCell",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Aux_Pedido_Edit"
+}

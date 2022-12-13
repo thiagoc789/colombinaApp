@@ -1,0 +1,29 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Aux_Pedido",
+        "Service": "/Colombina/Services/Colombina.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "ID_PEDIDOALEATORIO": "#Control:ID_PEDIDOALEATORIO/#Value",
+        "id_pedido_aux": "#Control:id_pedido_aux/#Value",
+        "id_cliente": "#Control:id_cliente/#Value",
+        "id_producto": "#Control:id_producto/#Value",
+        "nombreproducto": "#Control:nombreproducto/#Value",
+        "preciounitario": "#Control:preciounitario/#Value",
+        "preciototal": "#Control:preciototal/#Value",
+        "cantidad": "#Control:cantidad/#Value",
+        "fecha": "#Control:fecha/#Value",
+        "status": "#Control:status/#Value",
+        "imagen": "#Control:imagen/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/Colombina/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/Colombina/Actions/UpdateEntityFailureMessage.action"
+}
+
+

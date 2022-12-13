@@ -52,6 +52,7 @@
 							],
 							"ImageIsCircular": true
 						},
+						"OnPress": "/Colombina/Actions/Nav_Pedido_Edit.action",
 						"OnAccessoryButtonPress": "/Colombina/Actions/Msg_ConfirmarBorrado.action",
 						"Selected": false
 					},
