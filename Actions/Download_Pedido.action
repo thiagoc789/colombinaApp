@@ -1,0 +1,15 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "Download_Pedido"
+	},
+	"OnSuccess": "/Colombina/Rules/clientes/ItemPedidos.js",
+	"Service": "/Colombina/Services/Colombina.service",
+	"DefiningRequests": [
+		{
+			"Name": "Aux_Pedido",
+			"Query": "Aux_Pedido",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

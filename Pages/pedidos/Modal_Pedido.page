@@ -43,15 +43,6 @@
 							"Enabled": true
 						},
 						{
-							"Value": "{precio}",
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "Fc_precio",
-							"IsEditable": true,
-							"IsVisible": false,
-							"Caption": "Precio unitario",
-							"Enabled": true
-						},
-						{
 							"Value": [
 							],
 							"_Type": "Control.Type.FormCell.ListPicker",
@@ -128,6 +119,15 @@
 							"Image": "sap-icon://cancel",
 							"ImagePosition": "Leading",
 							"OnPress": "/Colombina/Actions/ClosePage.action"
+						},
+						{
+							"Value": "{precio}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_precio",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Precio unitario",
+							"Enabled": true
 						}
 					],
 					"Visible": true

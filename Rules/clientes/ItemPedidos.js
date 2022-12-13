@@ -16,6 +16,13 @@ export default function ItemPedidos(clientAPI) {
                 suma += parseInt(results.getItem(i).preciototal)
                 
             }
+            try {
+                let custListTab = clientAPI.evaluateTargetPathForAPI('#Page:Pedido_Detail');
+                let list = custListTab.getControl('SectionedTable0').getSection('SectionObjectTable0');
+                list.redraw();
+            } catch (e) {
+                dialog.alert(e.message);
+            }
             let valoriva= suma+suma*0.19
             let valortotal = clientAPI.evaluateTargetPath('#Page:Pedido_Detail/#Control:Fc_neto')
             valortotal.setValue('$'+valoriva)

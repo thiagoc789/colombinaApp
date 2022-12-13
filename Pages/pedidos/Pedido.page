@@ -14,7 +14,6 @@
 				{
 					"_Type": "Control.Type.TabItem",
 					"Caption": "Pedido",
-					"OnPress": "/Colombina/Rules/clientes/ItemPedidos.js",
 					"PageToOpen": "/Colombina/Pages/pedidos/Pedido_Detail.page",
 					"_Name": "TabItem1",
 					"ResetIfPressedWhenActive": true
