@@ -34,7 +34,7 @@
 							"Enabled": true
 						},
 						{
-							"Value": "/Colombina/Rules/traerimagen.js",
+							"Value": "'{imagen}'",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "Fc_imagen",
 							"IsEditable": true,

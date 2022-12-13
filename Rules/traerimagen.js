@@ -10,10 +10,10 @@ export default function traerimagen(clientAPI) {
         if (results && results.length > 0) {
             let imagen = results.getItem(0).descripcion
             let imagenaux = imagen.toString()
-            let string = 'Images/productos/'+imagenaux+'.png'
+            let string = imagenaux
             //"/Colombina"
             var fc_imagen = clientAPI.evaluateTargetPath('#Page:Modal_Pedido/#Control:Fc_imagen')
-            fc_imagen.setValue(string)
+            fc_imagen.setValue(string.toString())
             return string
             
 
