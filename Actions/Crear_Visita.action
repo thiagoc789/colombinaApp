@@ -3,7 +3,7 @@
 	"ActionResult": {
 		"_Name": "Crear_Visita"
 	},
-	"OnSuccess": "/Colombina/Rules/clientes/visita_exitosa.js",
+	"OnSuccess": "/Colombina/Actions/Crear_HISTV.action",
 	"Target": {
 		"Service": "/Colombina/Services/Colombina.service",
 		"EntitySet": "Clientes",

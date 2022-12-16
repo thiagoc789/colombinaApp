@@ -64,7 +64,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FormCellSimpleProperty0",
 							"IsEditable": true,
-							"IsVisible": true,
+							"IsVisible": false,
 							"Caption": "Caption",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true

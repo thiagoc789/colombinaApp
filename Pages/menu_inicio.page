@@ -52,7 +52,7 @@
 						{
 							"Title": "Historico del cliente",
 							"Image": "sap-icon://work-history",
-							"PageToOpen": "/Colombina/Pages/clientes/Hist_clientes.page",
+							"PageToOpen": "/Colombina/Pages/hist_cliente/Hist_clientes.page",
 							"_Name": "SideDrawerSection0Item4",
 							"ResetIfPressedWhenActive": true,
 							"Visible": true,

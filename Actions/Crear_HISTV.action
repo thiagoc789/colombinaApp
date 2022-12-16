@@ -1,0 +1,20 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "Crear_HISTV"
+	},
+	"OnSuccess": "/Colombina/Rules/clientes/visita_exitosa.js",
+	"Target": {
+		"Service": "/Colombina/Services/Colombina.service",
+		"EntitySet": "HISTV"
+	},
+	"Properties": {
+		"ID_VISITA": "/Colombina/Rules/generarAleatorio.js",
+		"id_cliente": "{id}",
+		"FECHA": "/Colombina/Rules/clientes/traerFechaCompleta.js",
+		"HORA_INICIO": "/Colombina/Rules/traer_hora.js",
+		"HORA_FIN": "Sin Finalizar",
+		"DURACION": "Sin finalizar",
+		"ESTADO": "Activa"
+	}
+}

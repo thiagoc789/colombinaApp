@@ -27,7 +27,7 @@
 						"Footnote": "{id}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "{dia_visita}",
-						"DetailImage": "{lat}",
+						"DetailImage": "{long}",
 						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",

@@ -7,5 +7,6 @@
 	"Title": "Continuar visita",
 	"OKCaption": "Continuar",
 	"OnOK": "/Colombina/Actions/Nav_Visita_Activa.action",
-	"CancelCaption": "Finalizar"
+	"CancelCaption": "Finalizar",
+	"OnCancel": "/Colombina/Actions/Finalizar_Visita2.action"
 }

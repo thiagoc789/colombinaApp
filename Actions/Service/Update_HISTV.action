@@ -1,0 +1,18 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "Update_HISTV"
+	},
+	"OnSuccess": "/Colombina/Actions/Nav_home.action",
+	"Target": {
+		"Service": "/Colombina/Services/Colombina.service",
+		"EntitySet": "HISTV",
+		"QueryOptions": "$filter=ESTADO eq 'Activa'",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties": {
+		"HORA_FIN": "/Colombina/Rules/traer_hora.js",
+		"DURACION": "/Colombina/Rules/calcular_duracion.js",
+		"ESTADO": "Finalizada"
+	}
+}

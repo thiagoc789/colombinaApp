@@ -3,7 +3,7 @@
 	"ActionResult": {
 		"_Name": "Download_Pedido"
 	},
-	"OnSuccess": "/Colombina/Rules/clientes/ItemPedidos.js",
+	"OnSuccess": "/Colombina/Actions/ClosePage.action",
 	"Service": "/Colombina/Services/Colombina.service",
 	"DefiningRequests": [
 		{

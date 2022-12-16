@@ -4,21 +4,15 @@
  */
 export default function traerimagen(clientAPI) {
     var dialog = clientAPI.nativescript.uiDialogsModule;
-    var idproducto = clientAPI.evaluateTargetPath('#Page:Modal_Pedido/#Control:Fc_idproducto/#Value')
 
-    return clientAPI.read('/Colombina/Services/Colombina.service', 'Inventario_Mayorista', [], `$filter=id eq '${idproducto}'`).then((results) => {
-        if (results && results.length > 0) {
-            let imagen = results.getItem(0).descripcion
-            let imagenaux = imagen.toString()
-            let string = imagenaux
-            //"/Colombina"
-            var fc_imagen = clientAPI.evaluateTargetPath('#Page:Modal_Pedido/#Control:Fc_imagen')
-            fc_imagen.setValue(string.toString())
-            return string
-            
+    let custListTab = clientAPI.evaluateTargetPathForAPI('#Page:Pedido_Detail');
 
-        } else {
-        }
-    });
+    let list = custListTab.getControl('SectionedTable0').getSections()[0];
+    let list2 = custListTab.getControl('SectionedTable0').getSection('SectionObjectTable0').getSections()[0];
+    let list3 = custListTab.getControl('SectionedTable0').getSection('SectionObjectTable0').getClientData().Title;
+
+    dialog.alert(list) 
+    dialog.alert(list2) 
+    dialog.alert(list3)       
 
 }

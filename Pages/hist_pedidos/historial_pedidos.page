@@ -25,7 +25,7 @@
 						"Title": "Pedido n°: {id}",
 						"Subhead": "Fecha: {nombre_producto}",
 						"Footnote": "Precio: ${preciototal}",
-						"DetailImage": "res://mdk_logo.png",
+						"DetailImage": "sap-icon://product",
 						"DetailImageIsCircular": false,
 						"StatusText": "Cliente: {cliente}",
 						"Description": "Enviado a SAP",

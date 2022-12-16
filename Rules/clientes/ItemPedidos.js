@@ -5,10 +5,6 @@
 export default function ItemPedidos(clientAPI) {
     var dialog = clientAPI.nativescript.uiDialogsModule;
 
-
-
-    
-
     return clientAPI.read('/Colombina/Services/Colombina.service', 'Aux_Pedido', [], `$filter=status eq 'Pendiente'`).then((results) => {
         if (results && results.length > 0) {
             let suma = 0;
@@ -21,7 +17,6 @@ export default function ItemPedidos(clientAPI) {
                 let list = custListTab.getControl('SectionedTable0').getSection('SectionObjectTable0');
                 list.redraw();
             } catch (e) {
-                dialog.alert(e.message);
             }
             let valoriva= suma+suma*0.19
             let valortotal = clientAPI.evaluateTargetPath('#Page:Pedido_Detail/#Control:Fc_neto')

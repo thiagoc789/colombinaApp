@@ -75,6 +75,7 @@
                 <Property MaxLength="100" Name="cantidad" Type="Edm.String"/>
                 <Property MaxLength="100" Name="preciototal" Type="Edm.String"/>
                 <Property MaxLength="100" Name="cliente" Type="Edm.String"/>
+                <Property MaxLength="100" Name="fecha" Type="Edm.String"/>
                 <Property MaxLength="100" Name="status" Type="Edm.String"/>
             </EntityType>
             <EntityType Name="HISTV">
@@ -83,12 +84,11 @@
                 </Key>
                 <Property MaxLength="100" Name="ID_VISITA" Nullable="false" Type="Edm.String"/>
                 <Property MaxLength="100" Name="id_cliente" Type="Edm.String"/>
-                <Property MaxLength="2" Name="MES" Type="Edm.String"/>
-                <Property MaxLength="4" Name="ANO" Type="Edm.String"/>
-                <Property MaxLength="50" Name="HORA" Type="Edm.String"/>
-                <Property MaxLength="50" Name="FIN" Type="Edm.String"/>
-                <Property MaxLength="50" Name="DURACION" Type="Edm.String"/>
-                <Property MaxLength="10" Name="ESTADO" Type="Edm.String"/>
+                <Property MaxLength="100" Name="FECHA" Type="Edm.String"/>
+                <Property Name="HORA_INICIO" Type="Edm.Date"/>
+                <Property Name="HORA_FIN" Type="Edm.Date"/>
+                <Property MaxLength="500" Name="DURACION" Type="Edm.String"/>
+                <Property MaxLength="100" Name="ESTADO" Type="Edm.String"/>
             </EntityType>
             <EntityType Name="Inventario_Cliente">
                 <Key>
@@ -116,7 +116,7 @@
                 <Property MaxLength="100" Name="cantidad" Type="Edm.String"/>
                 <Property MaxLength="100" Name="fecha" Type="Edm.String"/>
                 <Property MaxLength="100" Name="status" Type="Edm.String"/>
-                <Property MaxLength="100" Name="imagen" Type="Edm.String"/>
+                <Property MaxLength="5000" Name="imagen" Type="Edm.String"/>
             </EntityType>
         </Schema>
     </edmx:DataServices>

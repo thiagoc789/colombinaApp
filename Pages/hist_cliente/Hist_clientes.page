@@ -1,0 +1,73 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectCardCollection",
+					"Target": {
+						"Service": "/Colombina/Services/Colombina.service",
+						"EntitySet": "Clientes"
+					},
+					"_Name": "SectionObjectCardCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"Card": {
+						"Visible": true,
+						"Title": "{nombre}",
+						"Subhead": "{direccion}",
+						"DetailImage": "{long}",
+						"DetailImageIsCircular": false,
+						"OverflowButtons": [
+							{
+								"_Name": "SectionObjectCardCollection0OverflowButtons0",
+								"OnPress": "/Colombina/Actions/Nav_inventariodetail.action",
+								"Style": "Normal",
+								"Title": "Ver Inventario",
+								"Visible": true
+							},
+							{
+								"_Name": "SectionObjectCardCollection0OverflowButtons1",
+								"OnPress": "/Colombina/Actions/Nav_Cartera.action",
+								"Style": "Normal",
+								"Title": "Ver Cartera",
+								"Visible": true
+							}
+						],
+						"PrimaryAction": {
+							"OnPress": "/Colombina/Actions/Nav_pedidos_cliente.action",
+							"Style": "",
+							"Title": "Ver pedidos",
+							"Visible": true
+						},
+						"SecondaryAction": {
+							"OnPress": "/Colombina/Actions/Nav_visitas_cliente.action",
+							"Style": "",
+							"Title": "Ver Visitas",
+							"Visible": true
+						},
+						"_Type": "Control.Type.ObjectCard"
+					},
+					"Search": {
+						"Enabled": true,
+						"BarcodeScanner": true
+					},
+					"Layout": {
+						"LayoutType": "Vertical"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Hist_clientes",
+	"Caption": "Histórico clientes",
+	"PrefersLargeCaption": true
+}

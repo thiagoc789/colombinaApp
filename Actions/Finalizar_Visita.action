@@ -3,7 +3,7 @@
 	"ActionResult": {
 		"_Name": "Finalizar_Visita"
 	},
-	"OnSuccess": "/Colombina/Actions/Nav_home.action",
+	"OnSuccess": "/Colombina/Actions/Service/Update_HISTV.action",
 	"Target": {
 		"Service": "/Colombina/Services/Colombina.service",
 		"EntitySet": "Clientes",

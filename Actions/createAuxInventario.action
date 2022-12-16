@@ -1,7 +1,7 @@
 {
 	"_Type": "Action.Type.ODataService.CreateEntity",
 	"ActionResult": {
-		"_Name": "createAuxInventario"
+		"_Name": "create"
 	},
 	"OnFailure": "/Colombina/Actions/Msg_CrearEntidadFallo.action",
 	"OnSuccess": "/Colombina/Actions/Msg_anadircarrito.action",
@@ -19,6 +19,7 @@
 		"preciototal": "#Page:Modal_Pedido/#Control:Fc_valortotal/#Value",
 		"cantidad": "#Page:Modal_Pedido/#Control:Fc_cantidad/#Value",
 		"fecha": "/Colombina/Rules/clientes/traerfecha.js",
-		"status": "Pendiente"
+		"status": "Pendiente",
+		"imagen": "#Page:Main/#ClientData/#Property:imagen"
 	}
 }
