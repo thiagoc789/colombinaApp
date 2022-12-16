@@ -52,7 +52,7 @@
 						{
 							"Title": "Historico del cliente",
 							"Image": "sap-icon://work-history",
-							"PageToOpen": "/Colombina/Pages/clientes/Hist_clientes.page",
+							"PageToOpen": "/Colombina/Pages/hist_cliente/Hist_clientes.page",
 							"_Name": "SideDrawerSection0Item4",
 							"ResetIfPressedWhenActive": true,
 							"Visible": true,
@@ -73,9 +73,9 @@
 							}
 						},
 						{
-							"Title": "Cerrar Sesion",
-							"Image": "sap-icon://log",
-							"OnPress": "/Colombina/Actions/Logout.action",
+							"Title": "Historial Pedidos",
+							"Image": "sap-icon://history",
+							"PageToOpen": "/Colombina/Pages/hist_pedidos/historial_pedidos.page",
 							"_Name": "SideDrawerSection0Item3",
 							"Visible": true,
 							"TextAlignment": "left",
@@ -83,9 +83,9 @@
 							}
 						},
 						{
-							"Title": "Item0",
-							"Image": "sap-icon://action",
-							"PageToOpen": "/Colombina/Pages/historial_pedidos.page",
+							"Title": "Cerrar sesion",
+							"Image": "sap-icon://log",
+							"OnPress": "/Colombina/Actions/Logout.action",
 							"_Name": "SideDrawerSection0Item5",
 							"Visible": true,
 							"TextAlignment": "left",

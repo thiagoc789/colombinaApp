@@ -1,9 +1,6 @@
 {
 	"Controls": [
 		{
-			"FilterFeedbackBar": {
-				"_Type": "Control.Type.FilterFeedbackBar"
-			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
@@ -30,7 +27,7 @@
 						"Footnote": "{id}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "{dia_visita}",
-						"DetailImage": "/Colombina/Images/feliz.png",
+						"DetailImage": "{long}",
 						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",

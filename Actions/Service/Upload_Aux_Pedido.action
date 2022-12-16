@@ -1,0 +1,11 @@
+{
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "Upload_Aux_Pedido"
+	},
+	"OnSuccess": "/Colombina/Actions/Download_Pedido.action",
+	"Service": "/Colombina/Services/Colombina.service",
+	"UploadCategories": [
+		"Aux_Pedido"
+	]
+}

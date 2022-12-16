@@ -29,7 +29,7 @@
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "{status}",
 						"SubstatusText": "{fecha}",
-						"DetailImage": "{imagen}",
+						"DetailImage": "sap-icon://checklist-item",
 						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",

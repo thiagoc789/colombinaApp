@@ -1,0 +1,18 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "createAuxInventario"
+	},
+	"OnFailure": "/Colombina/Actions/Msg_CrearEntidadFallo.action",
+	"Target": {
+		"Service": "/Colombina/Services/Colombina.service",
+		"EntitySet": "Aux_Pedido"
+	},
+	"Properties": {
+		"ID_PEDIDOALEATORIO": "/Colombina/Rules/generarAleatorio.js",
+		"id_pedido_aux": "#Page:Inventario/#Control:Fc_idpedidoaux/#Value",
+		"id_cliente": "#Page:Inventario/#Control:Fc_campocliente/#Value",
+		"fecha": "/Colombina/Rules/clientes/traerfecha.js",
+		"status": "Pendiente"
+	}
+}

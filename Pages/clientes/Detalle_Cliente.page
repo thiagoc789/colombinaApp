@@ -12,7 +12,7 @@
 						"Footnote": "{telefono}",
 						"Description": "{direccion}",
 						"StatusText": "{dia_visita}",
-						"DetailImage": "/Colombina/Images/EPS.png",
+						"DetailImage": "{long}",
 						"DetailImageIsCircular": false,
 						"Tags": [
 						],

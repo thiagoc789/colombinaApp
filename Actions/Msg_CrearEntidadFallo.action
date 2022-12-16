@@ -1,6 +1,6 @@
 {
 	"_Type": "Action.Type.BannerMessage",
-	"Message": "Create entity failure - {ActionResults:create/error}",
+	"Message": "#ActionResults:create/error",
 	"Duration": 7,
 	"Animated": true
 }

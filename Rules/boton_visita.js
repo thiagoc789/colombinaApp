@@ -7,7 +7,6 @@ export default function boton_visita(clientAPI) {
 
     return clientAPI.read('/Colombina/Services/Colombina.service', 'Clientes', [], `$filter=lat eq 'Activa'`).then((results) => {
         if (results.length > 0) {
-            dialog.alert('hay visita activa')
             let containerProxy = clientAPI.getPageProxy().getControl('SectionedTable').getSection('SectionButtonTable2');
             containerProxy.setVisible(false)
         

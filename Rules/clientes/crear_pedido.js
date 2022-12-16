@@ -6,18 +6,22 @@ export default function crear_pedido(clientAPI) {
     var dialog = clientAPI.nativescript.uiDialogsModule;
 
     return clientAPI.read('/Colombina/Services/Colombina.service', 'Aux_Pedido', [], `$filter=status eq 'Pendiente'`).then((results) => {
-        if (results && results.length > 0) {
+        var preciototal = 0;
+        for (let i = 0; i < results.length; i++) {
+            preciototal = preciototal + parseInt(results.getItem(i).preciototal)
+        }
 
+        var auxprecio = preciototal.toString()
+
+        if (results && results.length > 0) {
             clientAPI.executeAction({
                 "Name": "/Colombina/Actions/Service/crearpedido.action",
                 "Properties": {
                     "Properties": {
-                        "id": results.getItem(i).id_pedido_aux,
-                        "id_pedido": '',
-                        "nombre_producto": results.getItem(i).fecha,
-                        "cantidad": results.getItem(i).cantidad,
-                        "preciototal": results.getItem(i).preciototal,
-                        "cliente": results.getItem(i).id_cliente,
+                        "id": results.getItem(0).id_pedido_aux,
+                        "nombre_producto": results.getItem(0).fecha,
+                        "cliente": results.getItem(0).id_cliente,
+                        "preciototal": auxprecio,
                         "status": 'Enviado'
                     }
                 }
@@ -25,10 +29,7 @@ export default function crear_pedido(clientAPI) {
 
             for (let i = 0; i < results.length; i++) {
 
-
                 var op = results.getItem(i);
-
-                
 
                 clientAPI.executeAction({
                     "Name": "/Colombina/Actions/Actualizar_Estado_Pedido_Enviado.action",
@@ -42,8 +43,6 @@ export default function crear_pedido(clientAPI) {
                     }
                 });
 
-
-
             }
         }
         else {
@@ -51,12 +50,6 @@ export default function crear_pedido(clientAPI) {
         }
 
     });
-
-    function calcularAleatorio() {
-        var aleatorio = Math.floor((Math.random() * (9999999999999 - 100000000 + 1)) + 100000000);
-
-        return aleatorio.toString();
-    }
 
 
 }

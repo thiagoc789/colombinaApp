@@ -1,0 +1,62 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectCardCollection",
+					"Target": {
+						"Service": "/Colombina/Services/Colombina.service",
+						"EntitySet": "Detalle_Pedido",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionObjectCardCollection1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"Card": {
+						"Visible": true,
+						"Title": "Pedido n°: {id}",
+						"Subhead": "Fecha: {nombre_producto}",
+						"Footnote": "Precio: ${preciototal}",
+						"DetailImage": "sap-icon://product",
+						"DetailImageIsCircular": false,
+						"StatusText": "Cliente: {cliente}",
+						"Description": "Enviado a SAP",
+						"OverflowButtons": [
+						],
+						"PrimaryAction": {
+							"OnPress": "/Colombina/Actions/Nav_Detalle_HistPedidos.action",
+							"Style": "",
+							"Title": "Ver Pedido",
+							"Visible": true
+						},
+						"SecondaryAction": {
+							"Style": "",
+							"Title": "Secondary",
+							"Visible": false
+						},
+						"_Type": "Control.Type.ObjectCard"
+					},
+					"Search": {
+						"Enabled": true,
+						"BarcodeScanner": true
+					},
+					"Layout": {
+						"LayoutType": "Vertical"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "historial_pedidos",
+	"Caption": "Historial de pedidos",
+	"PrefersLargeCaption": true
+}

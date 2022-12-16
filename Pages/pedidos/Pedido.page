@@ -19,6 +19,9 @@
 					"ResetIfPressedWhenActive": true
 				}
 			],
+			"PreloadTabs": [
+				-1
+			],
 			"Position": "Top"
 		}
 	],

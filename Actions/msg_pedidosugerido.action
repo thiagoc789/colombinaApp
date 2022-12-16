@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "msg_pedidosugerido"
+	},
+	"OnSuccess": "/Colombina/Actions/Nav_PedidoDetail.action",
+	"Message": "Producto Añadido al carrito",
+	"Duration": 1
+}

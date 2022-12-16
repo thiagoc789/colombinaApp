@@ -11,7 +11,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "Fc_idcliente",
 							"IsEditable": true,
-							"IsVisible": true,
+							"IsVisible": false,
 							"Caption": "Id cliente",
 							"Enabled": true
 						},
@@ -20,7 +20,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "Fc_idproducto",
 							"IsEditable": true,
-							"IsVisible": true,
+							"IsVisible": false,
 							"Caption": "Id producto",
 							"Enabled": true
 						},
@@ -29,26 +29,16 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "Fc_nombreproducto",
 							"IsEditable": true,
-							"IsVisible": true,
+							"IsVisible": false,
 							"Caption": "Nombre producto",
 							"Enabled": true
 						},
 						{
-							"Value": "/Colombina/Rules/traerimagen.js",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "Fc_imagen",
 							"IsEditable": true,
-							"IsVisible": true,
+							"IsVisible": false,
 							"Caption": "Imagen",
-							"Enabled": true
-						},
-						{
-							"Value": "{precio}",
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "Fc_precio",
-							"IsEditable": true,
-							"IsVisible": true,
-							"Caption": "Precio unitario",
 							"Enabled": true
 						},
 						{
@@ -59,7 +49,7 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"AllowMultipleSelection": false,
-							"AllowEmptySelection": true,
+							"AllowEmptySelection": false,
 							"Caption": "Seleccione tipo de cantidad",
 							"DataPaging": {
 								"ShowLoadingIndicator": false,
@@ -128,6 +118,15 @@
 							"Image": "sap-icon://cancel",
 							"ImagePosition": "Leading",
 							"OnPress": "/Colombina/Actions/ClosePage.action"
+						},
+						{
+							"Value": "{precio}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_precio",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Precio unitario",
+							"Enabled": true
 						}
 					],
 					"Visible": true
@@ -137,6 +136,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "Modal_Pedido",
-	"Caption": "Modal_Pedido",
+	"Caption": "Enviar al carrito",
 	"OnLoaded": "/Colombina/Rules/traerimagen.js"
 }
